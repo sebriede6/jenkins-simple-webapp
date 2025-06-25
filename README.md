@@ -64,38 +64,25 @@ docker run \
 
 Nach dem Start wird Jenkins unter `http://localhost:8080` initial konfiguriert (Unlock mit Passwort aus `docker logs my-simple-jenkins`, Installation der empfohlenen Plugins, Erstellung eines Admin-Users).
 
-**Screenshot: Jenkins Dashboard**
-*Hier Screenshot des Jenkins-Dashboards einfügen.*
 
-![Jenkins Dashboard](path/to/your/screenshots/dashboard.png)
 
 ### Schritt 5: Pipeline-Job Konfiguration
 
 Ein neuer "Pipeline"-Job wird erstellt. Die entscheidende Konfiguration ist "Pipeline script from SCM", die auf dieses Repository verweist.
 
-**Screenshot: SCM-Konfiguration des Jobs**
-*Hier Screenshot der SCM-Konfiguration in der Job-Ansicht einfügen.*
 
-![SCM Configuration](path/to/your/screenshots/scm-config.png)
 
 ### Schritt 6: Jenkinsfile
 
 Die `Jenkinsfile` im Root dieses Repositories definiert die Pipeline-Struktur. Sie verwendet einen Docker-Agenten, um den Build in einer sauberen Node.js-Umgebung auszuführen.
 
-**Screenshot: Inhalt der `Jenkinsfile`**
-*Hier Screenshot des Inhalts der Jenkinsfile einfügen.*
 
-![Jenkinsfile Content](path/to/your/screenshots/jenkinsfile-content.png)
 
 ### Schritt 7: Erfolgreicher Pipeline-Lauf
 
 Nach dem Klick auf "Build Now" führt Jenkins die in der `Jenkinsfile` definierten Stages aus. Der Build ist erfolgreich und alle Stufen sind grün.
 
-**Screenshot: Erfolgreicher Build und Konsolenausgabe**
-*Hier Screenshot der grünen Pipeline-Ansicht und eines Ausschnitts der Konsolenausgabe einfügen, der den `npm run build` Erfolg zeigt.*
 
-![Successful Pipeline Run](path/to/your/screenshots/pipeline-success.png)
-![Console Output](path/to/your/screenshots/console-output.png)
 
 ---
 
